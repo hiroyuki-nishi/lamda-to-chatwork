@@ -26,15 +26,15 @@ provider:
   environment:
     CHATWORK_API_KEY: 2170d6533685781b7e66b1673c2e2e09
     CHATWORK_HEADER: X-ChatWorkToken
-    CHATWORK_ROOM_ID: 64021731
+    CHATWORK_ROOM_ID: 88213490
     CHATWORK_URL: https://api.chatwork.com/v2
 
-  plugins:
-    - serverless-python-requirements
+plugins:
+  - serverless-python-requirements
 
-  custom:
-    pythonRequirements:
-      dockerizePip: true
+custom:
+  pythonRequirements:
+    dockerizePip: true
 
 functions:
   hello:
