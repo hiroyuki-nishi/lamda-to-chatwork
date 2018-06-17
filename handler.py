@@ -7,8 +7,6 @@ import os
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-message_header = "============ Alart ===========\n"
-
 
 def hello(event, context):
     logger.info("Event: " + str(event))
