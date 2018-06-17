@@ -20,5 +20,5 @@ custom:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.handler
 

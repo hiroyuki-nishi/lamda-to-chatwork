@@ -8,7 +8,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-def hello(event, context):
+def handler(event, context):
     logger.info("Event: " + str(event))
     __company_info(event)
 
@@ -23,9 +23,9 @@ def __post(url, payload):
     try:
         requests.post(url, headers=__header(), params=payload)
     except:
-        logger.info("Failed! Message : \n" + str(__message))
+        logger.info("Failed! Message : \n" + str(payload))
     else:
-        logger.info("Success! Message posted to: \n" + str(__message))
+        logger.info("Success! Message posted to: \n" + str(payload))
 
 
 def __header():
